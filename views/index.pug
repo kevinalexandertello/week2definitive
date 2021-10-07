@@ -1,0 +1,6 @@
+extends layouts/main-layout.pug
+
+block content
+    form(action="/add-book", method="POST")
+        input(type="text", name="bookname")
+        button(type="submit") Add Book

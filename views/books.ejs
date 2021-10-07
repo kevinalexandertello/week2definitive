@@ -1,0 +1,12 @@
+<%- include('includes/head.ejs') %>
+    <h1>Books</h1>
+    <% if (books.length > 0) { %>
+        <ul>
+            <% books.forEach((book) => { %>
+                <li><%= book.name %></li>
+            <% }) %>
+        </ul>
+    <% } else { %>
+        <h1>No Books Found!</h1>
+    <% } %>
+<%- include('includes/end.ejs') %>
